@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="vaas.autocurehome.VisitActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/visitor"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="The following person has visited your house. What would you like to do?"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/first"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Unlock door"
+        android:gravity="center"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/second"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Lock door"
+        android:gravity="center"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</LinearLayout>
